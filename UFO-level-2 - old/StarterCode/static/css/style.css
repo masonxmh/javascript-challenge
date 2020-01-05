@@ -138,7 +138,7 @@ select {
   color: #8e979f;
 }
 /* ====================================================================== */
-/* .dropdown{
+.dropdown{
   color:#8e979f;
 }
 .btn{
@@ -149,7 +149,7 @@ select {
 .dropdown-item{
   background: #4e5d6c;
   color:white;
-} */
+}
 
 
 /* media queries which will only be activated at specific screen sizes */

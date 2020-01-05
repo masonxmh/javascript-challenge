@@ -37,30 +37,20 @@
               <div class="panel-body">
                 <form>
                   <div class="form-group">
-                    <ul class="list-group" id="filters">
-                      <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/1/2010">
-                      </li>
-                      <li class="filter list-group-item">
-                        <label for="city">Enter a City</label>
-                        <input class="form-control" id="city" type="text" placeholder="benton">
-                      </li>
-                      <li class="filter list-group-item">
-                        <label for="city">Enter a State</label>
-                        <input class="form-control" id="state" type="text" placeholder="ca">
-                      </li>
-                      <li class="filter list-group-item">
-                        <label for="city">Enter a Country</label>
-                        <input class="form-control" id="country" type="text" placeholder="us">
-                      </li>
-                      <li class="filter list-group-item">
-                        <label for="city">Enter a Shape</label>
-                        <input class="form-control" id="shape" type="text" placeholder="circle">
-                      </li>
-                    </ul>
+                    <input type="text" class="form-control" id="search" placeholder="Search Term">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Click A Category
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <button class="dropdown-item" type="button" id = "datetime">Date</button>
+                          <button class="dropdown-item" type="button" id = "city">City</button>
+                          <button class="dropdown-item" type="button" id = "state">State</button>
+                          <button class="dropdown-item" type="button" id = "country">Country</button>
+                          <button class="dropdown-item" type="button" id = "shape">Shape</button>
+                        </div>
+                    </div>            
                   </div>
-                  <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
                   <!-- <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button> -->
                 </form>
               </div>
