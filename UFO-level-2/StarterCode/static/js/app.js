@@ -18,7 +18,7 @@ function renderTable(d) {
 //return table when first load of the index.html
 renderTable(tableData);
 
-//filter
+//Select the input element and get the raw HTML node
 var datetimeInput = d3.select("#datetime");
 var cityInput = d3.select("#city");
 var stateInput = d3.select("#state");
@@ -29,7 +29,7 @@ button.on("click", function() {
 
 // Select the input element and get the raw HTML node
     tbody.html("");
-    // define filterdata
+    // Initial filterdata
     var filterData = tableData;
 
     //Select datetime input 
@@ -67,7 +67,7 @@ button.on("click", function() {
       var filterData=filterData.filter(tableData => tableData.shape === shapeInputValue)
     };
 
-
+    //send filterdata to table function
     renderTable(filterData)
     });
       
